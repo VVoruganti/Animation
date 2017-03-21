@@ -12,13 +12,13 @@ var tl = new TimelineMax({
 });
 
 tl.call(go)
-  .from(gift, 2, {opacity:0, y:-300, ease:Bounce.easeOut, scale:4})
-  .fromTo(magicWand, 1.5, {opacity:0.2,x:-250, rotation:0, scale:2},{x:575,y:-125, rotation:330, opacity:1, scale:1})
+  .fromTo(gift, 2, {opacity:0,x:-150, y:-300, ease:Bounce.easeOut, scale:4},{opacity:1, x:-150, y:0, ease:Bounce.easeOut, scale:1})
+  .fromTo(magicWand, 1.5, {opacity:0.2,x:-250, rotation:0, scale:2},{x:75,y:-100, rotation:330, opacity:1, scale:1})
   .to(magicWand,1,{rotation:"+=30"})
   .to(gift,1.5,{scale:12,opacity:0})
   .to(magicWand,0.2,{opacity:0})
-  .fromTo(speechBubble,1,{x:600, y:-100,opacity:0,scale:0},{x:600,y:-100,opacity:1,scale:5})
-  .to(text,0.2,{x:600,y:-250})
+  .fromTo(speechBubble,1,{x:75, y:-100,opacity:0,scale:0},{x:75,y:-100,opacity:1,scale:3})
+  .to(text,0.2,{x:125,y:-220})
   .call(typing1)
   ;
   
