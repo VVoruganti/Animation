@@ -18,7 +18,7 @@ tl.call(go)
   .to(gift,1.5,{scale:12,opacity:0})
   .to(magicWand,0.2,{opacity:0})
   .fromTo(speechBubble,1,{y:-100,x:25,opacity:0,scale:0},{y:-100,x:25,opacity:1,scale:3})
-  .to(text,0.2,{x:50,y:-220})
+  .to(text,0.2,{x:60,y:-220})
   .call(typing1)
   ;
   
